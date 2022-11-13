@@ -2,4 +2,4 @@
 
 # It's much easier to put comments in org mode than in markdown.
 
-I probably should've put this with my dotfiles.
+I probably should've put this in the dotfiles.
