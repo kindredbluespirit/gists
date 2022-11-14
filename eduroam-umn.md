@@ -19,14 +19,13 @@ network={
 }
 ```
 
-### iwd (incomplete)
+### iwd
 /var/lib/iwd/eduroam.8021x
 ```
 [Security]
 EAP-Method=PEAP
-EAP-Identity={anonymous_identity}
-EAP-PEAP-CACert={ca_cert}
-EAP-PEAP-ServerDomainMask={servers}
+# EAP-PEAP-CACert={ca_cert}
+# EAP-PEAP-ServerDomainMask={servers}
 EAP-PEAP-Phase2-Method=MSCHAPV2
 EAP-PEAP-Phase2-Identity=<email>
 EAP-PEAP-Phase2-Password=<password>
