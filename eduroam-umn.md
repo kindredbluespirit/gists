@@ -1,19 +1,4 @@
 The default archiso doesn't contain `networkmanager` which we use by default.
-Also, `iwd` is very user unfriendly and has bad defaults when it comes to
-802.1x PEAP (eduroam)  configuration. So systemd-networkd it is.
-
-### iwd
-```
-## /var/lib/iwd/eduroam.8021x (incomplete)
-[Security]
-EAP-Method=PEAP
-EAP-Identity=eduroam@gwdg.de
-EAP-PEAP-CACert=/etc/ssl/certs/T-TeleSec_GlobalRoot_Class_2.pem
-EAP-PEAP-Phase2-Method=MSCHAPV2
-EAP-PEAP-Phase2-Identity=user-name@uni-goettingen.de
-EAP-PEAP-Phase2-Password=password
-EAP-PEAP-ServerDomainMask=eduroam.gwdg.de
-```
 
 ### wpa_supplicant
 ```
@@ -31,6 +16,19 @@ network={
     phase2="auth=MSCHAPV2"
 	password="password"
 }
+```
+
+### iwd
+```
+## /var/lib/iwd/eduroam.8021x (incomplete)
+[Security]
+EAP-Method=PEAP
+EAP-Identity=eduroam@gwdg.de
+EAP-PEAP-CACert=/etc/ssl/certs/T-TeleSec_GlobalRoot_Class_2.pem
+EAP-PEAP-Phase2-Method=MSCHAPV2
+EAP-PEAP-Phase2-Identity=user-name@uni-goettingen.de
+EAP-PEAP-Phase2-Password=password
+EAP-PEAP-ServerDomainMask=eduroam.gwdg.de
 ```
 
 ### systemd-networkd
