@@ -10,11 +10,11 @@ network={
     pairwise=CCMP
     group=CCMP TKIP
     eap=PEAP
-    ca_cert="/home/user/.config/cat_installer/ca.pem"
-    identity="email"
+    ca_cert="<home>/.config/cat_installer/ca.pem"
+    identity="<email>"
     altsubject_match="DNS:eduroam.netaccess.umn.edu"
     phase2="auth=MSCHAPV2"
-	password="password"
+	password="<password>"
 }
 ```
 
