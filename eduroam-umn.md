@@ -24,8 +24,9 @@ network={
 ```
 [Security]
 EAP-Method=PEAP
-# EAP-PEAP-CACert={ca_cert}
-# EAP-PEAP-ServerDomainMask={servers}
+EAP-Identity=
+EAP-PEAP-CACert=<cert>
+EAP-PEAP-ServerDomainMask=['DNS:eduroam.netaccess.umn.edu']
 EAP-PEAP-Phase2-Method=MSCHAPV2
 EAP-PEAP-Phase2-Identity=<email>
 EAP-PEAP-Phase2-Password=<password>
