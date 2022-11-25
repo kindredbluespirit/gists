@@ -35,6 +35,7 @@ podman container commit _TAB_container-name
 ## set the catkin workspace only once
 pushd
 mkdir -p catkin_ws/src
+pushd catkin_ws
 catkin_make
 
 ## once for every shell
