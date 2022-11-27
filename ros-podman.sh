@@ -18,7 +18,11 @@ podman container list --all
 ## i - interactive
 ## l - latest
 podman container start -ail
-# podman container start _TAB_container-name
+# podman container start -ai _TAB_container-name
+
+## add bash session
+podman container exec -til bash
+# podman container exec -ti _TAB_container-name
 
 ################################
 ## optional, not necessary
