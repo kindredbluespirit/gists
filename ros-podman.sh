@@ -13,16 +13,14 @@ podman run -it ros:noetic-desktop-full
 ## list containers (including the stopped ones)
 podman container list --all
 
-## start and attach to the container
-## a - attach
-## i - interactive
-## l - latest
+## single shell
 podman container start -ail
-# podman container start -ai _TAB_container-name
+podman container stop -l
 
-## add bash session
-podman container exec -til bash
-# podman container exec -ti _TAB_container-name
+## multiple shell sessions
+podman container restart -l
+podman container exec -til -w /root bash
+podman container stop -l
 
 ################################
 ## optional, not necessary
