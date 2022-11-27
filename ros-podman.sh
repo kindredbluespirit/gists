@@ -37,6 +37,7 @@ pushd
 mkdir -p catkin_ws/src
 pushd catkin_ws
 catkin_make
+popd
 
 ## once for every shell
 .  ~/catkin_ws/devel/setup.bash
