@@ -10,8 +10,18 @@ podman image list
 ## run image as container
 podman run -it ros:noetic-desktop-full
 
-## list containers
-podman container list
+## list containers (including the stopped ones)
+podman container list --all
+
+## start and attach to the container
+## a - attach
+## i - interactive
+## l - latest
+podman container start -ail
+# podman container start _TAB_container-name
+
+################################
+## optional, not necessary
 
 ## pause container (
 ## doesn't work for us, simply freezes the terminal, 
