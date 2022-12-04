@@ -11,6 +11,7 @@ podman image list
 podman run -it ros:noetic-desktop-full
 
 ## run image with gui and networking, remove after exiting
+## https://major.io/2021/10/17/run-xorg-applications-with-podman/
 podman run -it --rm -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix ros:noetic-desktop-full
 
 ## x access for all users
