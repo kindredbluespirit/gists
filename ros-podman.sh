@@ -11,7 +11,7 @@ podman image list
 podman run -it ros:noetic-desktop-full
 
 ## run image with gui and networking, remove after exiting
-podman run -it --rm -e DISPLAY --net=host ros:noetic-desktop-full -v /tmp/.X11-unix:/tmp/.X11-unix
+podman run -it --rm -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix ros:noetic-desktop-full
 
 ## x access for all users
 xhost +  ## unblock
