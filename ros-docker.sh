@@ -13,5 +13,10 @@ docker build --rm  -t my-ros .
 # docker system prune
 docker image prune
 
+## remove all none images
+
 ## create/run container
 docker run -it --rm -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix my-ros
+
+## remove everything
+docker system prune --all
