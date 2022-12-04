@@ -10,6 +10,21 @@ podman image list
 ## run image as container
 podman run -it ros:noetic-desktop-full
 
+## run image with gui and networking, remove after exiting
+podman run -it --rm -e DISPLAY --net=host ros:noetic-desktop-full -v /tmp/.X11-unix:/tmp/.X11-unix
+
+## x access for all users
+xhost +  ## unblock
+xhost - ## block
+
+## x access for non-network local users
+xhost +"local:"  ## unblock
+xhost -"local:" ## block
+
+## x access for podman
+xhost +"local:podman@"  ## unblock
+xhost -"local:podman@" ## block
+
 ## list containers (including the stopped ones)
 podman container list --all
 
