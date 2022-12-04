@@ -60,7 +60,7 @@ podman container commit _TAB_container-name
 .  /opt/ros/noetic/setup.bash
 
 ## set the catkin workspace only once
-pushd
+cd ## pushd only works here in zsh
 mkdir -p catkin_ws/src
 pushd catkin_ws
 catkin_make
