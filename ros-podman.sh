@@ -5,14 +5,19 @@
 podman pull docker.io/osrf/ros:noetic-desktop-full
 
 ## list images
-podman image list
+podman image ls -a
+
+## build image in the dockerfile directory
+## https://github.com/onetruffle/ros-dockerfile
+podman build --rm -t my-ros .
 
 ## run image as container
-podman run -it ros:noetic-desktop-full
+# podman run -it ros:noetic-desktop-full
+podman run -it my-ros
 
 ## run image with gui and networking, remove after exiting
 ## https://major.io/2021/10/17/run-xorg-applications-with-podman/
-podman run -it --rm -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix ros:noetic-desktop-full
+podman run -it --rm -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix my-ros
 
 ## x access for all users
 xhost +  ## unblock
