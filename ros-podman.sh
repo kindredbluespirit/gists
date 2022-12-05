@@ -13,11 +13,11 @@ podman build --rm -t my-ros .
 
 ## run image as container
 # podman run -it ros:noetic-desktop-full
-podman run -it my-ros
+podman run -it image1
 
 ## run image with gui and networking, remove after exiting
 ## https://major.io/2021/10/17/run-xorg-applications-with-podman/
-podman run -it --rm -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix my-ros
+podman run -it --rm -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix image1
 
 ## x access for all users
 xhost +  ## unblock
