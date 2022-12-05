@@ -17,7 +17,9 @@ podman run -it image1
 
 ## run image with gui and networking, remove after exiting
 ## https://major.io/2021/10/17/run-xorg-applications-with-podman/
-podman run -it --rm -e DISPLAY --net=host -v /tmp/.X11-unix:/tmp/.X11-unix image1
+podman run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix image1
+## --net=host breaks the network config
+## --rm for single use
 
 ## x access for all users
 xhost +  ## unblock
