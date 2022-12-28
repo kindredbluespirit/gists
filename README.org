@@ -1,4 +1,4 @@
-* gist
+* gists
 
 # It's much easier to put comments in org mode than in markdown.
 
