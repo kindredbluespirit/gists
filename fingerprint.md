@@ -1,5 +1,5 @@
 ## T480s
-Installing python-validity is good enough
+Installing `python-validity` suffices
 
 Top of /etc/pam.d/sddm
 ```
