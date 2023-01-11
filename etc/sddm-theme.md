@@ -1,7 +1,7 @@
 /etc/sddm.conf.d/theme.conf
 ```
 [Theme]
-Current=archlinux-soft-gray
+Current=archlinux-soft-grey
 CursorTheme=oreo_white_cursors
 ```
 
