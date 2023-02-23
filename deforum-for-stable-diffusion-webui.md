@@ -1,3 +1,5 @@
+### Animation using stable diffusion
+
 Place the following text in a new code cell in the `Automatic1111` notebook at https://github.com/TheLastBen/fast-stable-diffusion before the webui is run.
 ```
 #@markdown # Install the deforum extension
