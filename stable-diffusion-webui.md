@@ -19,4 +19,4 @@ else:
 ```
 
 ### Huggingface
-...only lets you run python scripts, not shell scripts. Instead of using `webui.sh`, run `launch.py` directly instead.
+...only lets you run python scripts, not shell scripts. Instead of using `webui.sh`, run `launch.py` directly instead. Also, `--share` isn't allowed.
