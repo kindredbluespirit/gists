@@ -20,3 +20,24 @@ else:
 
 ### Huggingface
 ...only lets you run python scripts, not shell scripts. Instead of using `webui.sh`, run `launch.py` directly instead. Also, `--share` isn't allowed.
+
+### Huggingface + deforum
+run.sh
+```
+#!usr/bin/env bash
+
+[ -d extensions/deforum ] || git clone https://github.com/deforum-art/deforum-for-automatic1111-webui extensions/deforum
+
+. webui.sh
+```
+run.py
+```
+# import os
+
+# if not os.path.exists("extensions/deforum"):
+#     exec(open("deforum.sh").read())
+
+exec(open("run.sh").read())
+
+```
+Run `run.py` instead of `run.sh` since shell scripts cannot be called directly.
