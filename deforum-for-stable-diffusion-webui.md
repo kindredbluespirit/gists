@@ -6,7 +6,7 @@ Place the following text in a new code cell in one of the colab notebooks listed
 !git clone https://github.com/deforum-art/deforum-for-automatic1111-webui /content/gdrive/MyDrive/sd/stable-diffusion-webui/extensions/deforum
 ```
 ### CPU only mode
-```
+```py
 # @markdown # Start webui
 
 import torch
