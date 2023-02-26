@@ -41,3 +41,7 @@ exec(open("run.sh").read())
 
 ```
 Run `run.py` instead of `run.sh` since shell scripts cannot be called directly.
+
+-----------------------
+
+Nevermind, apparently none of the shell scripts can be run, directly or indirectly. Only option is to convert everything to python.
