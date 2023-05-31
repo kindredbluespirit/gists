@@ -22,9 +22,15 @@ rm -rf build devel
 catkin_make
 
 ## run the python scripts
-python <path-to-smartmicro>/custom_scripts/pointcloud_z_filter.py
-python <path-to-smartmicro>/custom_scripts/reverse_bag.py
 python <path-to-smartmicro>/src/radar_object_converter/umrrll_object_converter.py
+python <path-to-smartmicro>/custom_scripts/pointcloud_z_filter.py
+
+## rosbag filter
+rosbag filter <input-bag-from-aws> <intermediate-bag> m
+
+## convert intermediate bag to reversed output, change names in the python script
+python <path-to-smartmicro>/custom_scripts/reverse_bag.py
+
 
 ## setup shell
 . <path-to-setup.sh>
