@@ -16,17 +16,18 @@ apt install \
 ## begin ros server
 roscore
 
+## run the python scripts, each supplies a ros node
+python <path-to-smartmicro>/src/radar_object_converter/umrrll_object_converter.py
+python <path-to-smartmicro>/custom_scripts/pointcloud_z_filter.py
+
 ## catkin make
 cd <path-to-smartmicro>
 rm -rf build devel
 catkin_make
 
-## run the python scripts, each supplies a ros node
-python <path-to-smartmicro>/src/radar_object_converter/umrrll_object_converter.py
-python <path-to-smartmicro>/custom_scripts/pointcloud_z_filter.py
-
 ## setup shell
-. <path-to-setup.sh>
+#. <path-to-setup.sh>
+. <path-to-smartmicro>/devel/setup.sh
 
 ## add node
 rosrun fusion aeb_visualizer_node
