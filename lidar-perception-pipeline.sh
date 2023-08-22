@@ -16,7 +16,7 @@ pip install spconv-cuxx
 ## install av2, kornia
 
 ## docker
-podman run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/shared:~/shared image1
+podman run -it -e DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v ~/shared:~/shared --network host image1
 
 ## grant gui permission
 xhost +
