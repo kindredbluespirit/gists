@@ -1,6 +1,7 @@
 ## Archlinux Installation
+## https://wiki.archlinux.org/title/Installation_guide
 
-## ISO side (root)
+#### ISO side (root) #########################################################
 
 ## Disable the pc speaker
 ## https://wiki.archlinux.org/title/PC_speaker#Disabling_the_PC_speaker
@@ -38,3 +39,32 @@ genfstab -U /mnt >> /mnt/etc/fstab
 
 ## Chroot into the new system
 arch-chroot /mnt
+
+#### Computer side (root) #########################################################
+
+## Set the timezone
+ln -sf /usr/share/zoneinfo/America/Chicago /etc/localtime
+
+## Generate /etc/adjtime
+hwclock --systohc
+
+## Enable time synchronization
+systemctl enable --now systemd-timesyncd
+
+## Uncomment en US UTF-8 in /etc/locale.gen
+## otherwise you may face issues in ~/.config/locale.conf (default C values)
+
+## Generate locale
+locale-gen
+
+## /etc/locale.conf
+LANG=en_US.UTF-8
+
+## /etc/hostname
+archlinux
+
+## generate the initial ramdisk (initramfs)
+mkinitcpio -P
+
+## root password
+passwd
