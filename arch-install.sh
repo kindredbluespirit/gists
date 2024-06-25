@@ -25,6 +25,7 @@ mkswap /dev/sda2
 mkfs.ext4 /dev/sda3
 
 ## Mount
+## https://wiki.archlinux.org/title/EFI_system_partition#Typical_mount_points
 mount /dev/sda3 /mnt
 mount /dev/sda1 /mnt/efi
 swapon /dev/sda2
