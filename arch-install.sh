@@ -31,10 +31,20 @@ mount /dev/sda1 /mnt/efi
 swapon /dev/sda2
 
 ## Bootstrap the system
-pacstrap -K /mnt base linux linux-firmware
+pacstrap -K /mnt base linux linux-firmware \
+  git chezmoi neovim zsh iwd
 
 ## Generate filesystem table file
 genfstab -U /mnt >> /mnt/etc/fstab
+
+## Uncomment en US UTF-8 in /mnt/etc/locale.gen
+## otherwise you may face issues in the computer's ~/.config/locale.conf (default C values)
+
+## /etc/locale.conf
+LANG=en_US.UTF-8
+
+## /etc/hostname
+archlinux
 
 ## Chroot into the new system
 arch-chroot /mnt
@@ -50,17 +60,8 @@ hwclock --systohc
 ## Enable time synchronization
 systemctl enable --now systemd-timesyncd
 
-## Uncomment en US UTF-8 in /etc/locale.gen
-## otherwise you may face issues in ~/.config/locale.conf (default C values)
-
 ## Generate locale
 locale-gen
-
-## /etc/locale.conf
-LANG=en_US.UTF-8
-
-## /etc/hostname
-archlinux
 
 ## generate the initial ramdisk (initramfs)
 mkinitcpio -P
