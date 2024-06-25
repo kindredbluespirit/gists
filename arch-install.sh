@@ -28,7 +28,7 @@ mkfs.ext4 /dev/sda3
 
 ## Mount
 mount /dev/sda3 /mnt
-mount /dev/sda1 /efi
+mount /dev/sda1 /mnt/efi
 swapon /dev/sda2
 
 ## Bootstrap the system
