@@ -66,7 +66,12 @@ locale-gen
 ## generate the initial ramdisk (initramfs)
 mkinitcpio -P
 
-## refind-install
+## refind
+refind-install
+
+## https://wiki.archlinux.org/title/REFInd#Installation_with_refind-install_script
+## https://www.reddit.com/r/archlinux/comments/16thgfi/comment/k2eyb4u/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button
+rm /boot/refind_linux.conf
 
 ## root password
 passwd
