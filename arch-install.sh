@@ -32,7 +32,7 @@ swapon /dev/sda2
 
 ## Bootstrap the system
 pacstrap -K /mnt base linux linux-firmware \
-  git chezmoi neovim zsh iwd
+  git chezmoi neovim zsh iwd refind\ # minimal live boot independent system
 
 ## Generate filesystem table file
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -66,5 +66,32 @@ locale-gen
 ## generate the initial ramdisk (initramfs)
 mkinitcpio -P
 
+## refind-install
+
 ## root password
 passwd
+
+## for makepkg/yay
+pacman -S fakeroot
+
+## dotfiles
+git clone https://github.com/kindredbluespirit/dotfiles.git ~/.dotfiles
+chezmoi --source ~/.dotfiles apply
+
+## regular user
+useradd -m -G wheel -s /bin/zsh user
+passwd user
+
+## change user
+su -l user
+
+#### Computer side (user) #########################################################
+
+## dotfiles
+git clone https://github.com/kindredbluespirit/dotfiles.git ~/.dotfiles
+chezmoi --source ~/.dotfiles apply
+
+## setup
+setup-arch-packages
+setup-zsh-deps
+setup-home
