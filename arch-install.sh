@@ -77,7 +77,7 @@ rm /boot/refind_linux.conf
 passwd
 
 ## for makepkg/yay
-pacman -S fakeroot
+pacman -S debugedit fakeroot
 
 ## dotfiles
 git clone https://github.com/kindredbluespirit/dotfiles.git ~/.dotfiles
