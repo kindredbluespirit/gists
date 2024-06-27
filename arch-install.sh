@@ -100,3 +100,6 @@ chezmoi --source ~/.dotfiles apply
 setup-arch-packages
 setup-zsh-deps
 setup-home
+
+## https://wiki.archlinux.org/title/XDG_user_directories
+LC_ALL=C.UTF-8 xdg-user-dirs-update --force
