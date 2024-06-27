@@ -1,7 +1,7 @@
 ## software install
 pacman -S nvidia cuda python-pytorch-cuda
 
-## rebuild initramfs
+## rebuild initramfs so modules load next time on
 mkinitcpio -P
 
 ## verify driver working
