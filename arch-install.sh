@@ -60,6 +60,9 @@ hwclock --systohc
 ## Enable time synchronization
 systemctl enable --now systemd-timesyncd
 
+## /etc/locale.gen
+en_US.UTF-8
+
 ## Generate locale
 locale-gen
 
