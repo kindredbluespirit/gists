@@ -1,4 +1,4 @@
-## wireguard, ollama, open-webui, ufw, podman
+## wireguard, caddy, ollama, open-webui, ufw, podman, cuda
 ## https://blog.fuzzymistborn.com/vps-reverse-proxy-tunnel/
 
 #### vps #############################################################
@@ -16,6 +16,9 @@ PublicKey = PUBLIC_DMZ_KEY
 AllowedIPs = 10.10.10.10/32
 ```
 
+## start wireguard
+systemctl enable --now wg-quick@wg0 
+
 ## setup caddy
 ## /etc/caddy/Caddyfile
 ## redirects https/443 traffic to open-webui listening on port 8080 
@@ -23,6 +26,10 @@ AllowedIPs = 10.10.10.10/32
 https://<domain-name>
 reverse-proxy <homeserver-wg0-ip>:8080 
 ```
+
+## start caddy
+systemctl disable --now nginx
+systemctl enable --now caddy
 
 ## allow https (443)
 ufw allow 443
