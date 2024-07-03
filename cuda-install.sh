@@ -1,5 +1,5 @@
 ## software install
-pacman -S nvidia cuda python-pytorch-cuda
+pacman -S nvidia cuda python-pytorch-cuda nvidia-container-toolkit
 
 ## rebuild initramfs so modules load next time on
 mkinitcpio -P
