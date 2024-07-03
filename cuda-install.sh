@@ -4,8 +4,9 @@ pacman -S nvidia cuda python-pytorch-cuda
 ## rebuild initramfs so modules load next time on
 mkinitcpio -P
 
-## verify driver working
-nvidia-smi
+## verify driver working every 0.5 seconds
+## https://youtu.be/Wjrdr0NU4Sk?si=GHTHHInt_hJUf9Jv&t=435
+watch -n -0.5 nvidia-smi
 
 ## cuda-samples
 pacman -Qqs gcc
