@@ -3,7 +3,7 @@
 ## https://hub.docker.com/_/nextcloud
 ## https://github.com/nextcloud/all-in-one#nextcloud-all-in-one
 
-# For Linux and without a web server or reverse proxy (like Apache, Nginx, Cloudflare Tunnel and else) already in place:
+## For Linux and without a web server or reverse proxy (like Apache, Nginx, Cloudflare Tunnel and else) already in place:
 docker run \
 --init \
 --sig-proxy=false \
@@ -12,4 +12,6 @@ docker run \
 --publish 8081:8080 \
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
 --volume /var/run/docker.sock:/var/run/docker.sock:ro \
-nextcloud/all-in-one:latest
+docker.io/nextcloud/all-in-one:latest
+
+## prefix docker.io/ to image name while using podman
