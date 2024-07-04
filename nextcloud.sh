@@ -4,6 +4,7 @@
 ## https://github.com/nextcloud/all-in-one#nextcloud-all-in-one
 
 ## For Linux and without a web server or reverse proxy (like Apache, Nginx, Cloudflare Tunnel and else) already in place:
+## https://github.com/nextcloud/all-in-one/blob/main/docker-rootless.md
 docker run \
 --init \
 --sig-proxy=false \
