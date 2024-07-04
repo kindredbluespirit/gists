@@ -12,9 +12,10 @@ docker run \
 --restart always \
 --publish 8081:8080 \
 --volume nextcloud_aio_mastercontainer:/mnt/docker-aio-config \
---volume $XDG_RUNTIME_DIR/docker.sock:/var/run/docker.sock:ro \
---env WATCHTOWER_DOCKER_SOCKET_PATH=$XDG_RUNTIME_DIR/docker.sock \
 docker.io/nextcloud/all-in-one:latest
+
+# --volume $XDG_RUNTIME_DIR/docker.sock:/var/run/docker.sock:ro \
+# --env WATCHTOWER_DOCKER_SOCKET_PATH=$XDG_RUNTIME_DIR/docker.sock \
 
 # --volume /var/run/docker.sock:/var/run/docker.sock:ro \
 
