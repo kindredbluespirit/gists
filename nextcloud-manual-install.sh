@@ -14,7 +14,7 @@ networks:
     enable_ipv6: false
     ipam:
       driver: default
-      config:
+#       config:
 #        - subnet: ${IPV6_NETWORK}
 
 ## some more changes to compose.yaml are needed
