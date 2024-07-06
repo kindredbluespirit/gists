@@ -45,3 +45,9 @@ Commit: 7d98c6de73fb939f1eb4b8a500c569b858b2d297
 ## coder/code-server
 ## linuxserver
 ## gitpod
+
+## looks like devcontainers (the foss part) wasn't written very well
+## https://github.com/xaberus/vscode-remote-oss/issues/2#issuecomment-1785798665
+
+## focusing on ssh'ing into docker containers instead
+## https://linuxhandbook.com/ssh-into-container/
