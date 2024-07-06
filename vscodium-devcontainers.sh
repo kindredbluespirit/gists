@@ -10,7 +10,7 @@ Release: 24171
 Commit: 7d98c6de73fb939f1eb4b8a500c569b858b2d297
 ```
 
-## https://github.com/gitpod-io/openvscode-server
+## https://github.com/VSCodium/vscodium/issues/205
 ## https://github.com/gitpod-io/openvscode-server
 
 ## https://stackoverflow.com/questions/56073276/how-can-i-install-vs-code-server-manually-and-tell-vs-code-remote
