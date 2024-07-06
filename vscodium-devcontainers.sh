@@ -28,6 +28,7 @@ Commit: 7d98c6de73fb939f1eb4b8a500c569b858b2d297
 
 ## also check this
 ## https://github.com/VSCodium/vscodium/issues/1229
+## https://github.com/VSCodium/vscodium/discussions/1471
 
 #### foss alternatives #########################################
 
@@ -38,4 +39,9 @@ Commit: 7d98c6de73fb939f1eb4b8a500c569b858b2d297
 ## https://github.com/xaberus/vscode-remote-oss # for reh support
 ## https://github.com/jeanp413/open-remote-ssh
 
+#################################################################
 
+## third party server versions that run on a browser
+## coder/code-server
+## linuxserver
+## gitpod
