@@ -28,3 +28,14 @@ Commit: 7d98c6de73fb939f1eb4b8a500c569b858b2d297
 
 ## also check this
 ## https://github.com/VSCodium/vscodium/issues/1229
+
+#### foss alternatives #########################################
+
+## vscode
+## vscodium
+
+## remote ssh extension
+## https://github.com/xaberus/vscode-remote-oss # for reh support
+## https://github.com/jeanp413/open-remote-ssh
+
+
