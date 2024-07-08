@@ -1,4 +1,4 @@
-# docker compose collection
+# docker compose
 
 ## default
 
