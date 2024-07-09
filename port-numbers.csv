@@ -1,5 +1,5 @@
 name, host, container
 open-webui, 8080, 8080
 comfyui, 8081, 8080
-cockpit, -, 9090
+cockpit, 9090. -
 auto1111, 7860, 7860
