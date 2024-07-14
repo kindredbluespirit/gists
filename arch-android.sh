@@ -12,12 +12,12 @@ pacman -S android-tools
 # yay -S android-platform
 
 ## better install them in the user home instead since changes are being made to the directory by flutter (userspace, not root)
-## https://wiki.archlinux.org/title/Android#SDK_packages
-## https://developer.android.com/tools/sdkmanager
 
 ## system/sdkmanager compatible
 archlinux-java set java-22-openjdk
 
+## https://wiki.archlinux.org/title/Android#SDK_packages
+## https://developer.android.com/tools/sdkmanager
 sdkmanager "build-tools;35.0.0"
 sdkmanager "platform-tools"
 sdkmanager "platforms;android-35"
