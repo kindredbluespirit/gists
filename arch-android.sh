@@ -23,7 +23,7 @@ sdkmanager "platform-tools"
 sdkmanager "platforms;android-35"
 
 ## flutter compatible
-archlinux-java set java-22-openjdk
+archlinux-java set java-11-openjdk
 
 #### Flutter ###############################
 
