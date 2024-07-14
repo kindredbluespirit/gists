@@ -3,13 +3,19 @@
 ## adb
 pacman -S android-tools 
 
+#### android sdk ###########################
+
 ## sdkmanager cmdline
-yay -S android-sdk-cmdline-tools-latest
+# yay -S android-sdk-cmdline-tools-latest
 
 ## sdk
-yay -S android-platform
+# yay -S android-platform
 
-#### Flutter ################
+## better install them in the user home instead since changes are being made to the directory by flutter (userspace, not root)
+## https://wiki.archlinux.org/title/Android#SDK_packages
+## https://developer.android.com/tools/sdkmanager
+
+#### Flutter ###############################
 
 ## Install flutter, dart extensions on vscode/codium
 
