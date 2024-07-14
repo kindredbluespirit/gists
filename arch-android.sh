@@ -15,6 +15,16 @@ pacman -S android-tools
 ## https://wiki.archlinux.org/title/Android#SDK_packages
 ## https://developer.android.com/tools/sdkmanager
 
+## system/sdkmanager compatible
+archlinux-java set java-22-openjdk
+
+sdkmanager "build-tools;35.0.0"
+sdkmanager "platform-tools"
+sdkmanager "platforms;android-35"
+
+## flutter compatible
+archlinux-java set java-22-openjdk
+
 #### Flutter ###############################
 
 ## Install flutter, dart extensions on vscode/codium
