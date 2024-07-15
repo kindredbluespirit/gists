@@ -13,6 +13,10 @@ pacman -S android-tools
 
 ## better install them in the user home instead since changes are being made to the directory by flutter (userspace, not root)
 
+## place the extracted sdkmanager folder under ~/.android-sdk/cmdline-tools/latest, not ~/.android-sdk/cmdline-tools
+## https://developer.android.com/studio#command-line-tools-only
+## https://stackoverflow.com/questions/65262340/cmdline-tools-could-not-determine-sdk-root
+
 ## system/sdkmanager compatible
 archlinux-java set java-22-openjdk
 
