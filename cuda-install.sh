@@ -17,6 +17,4 @@ make HOST_COMPILER=g++-13
 ## 2. gcc compiler
 ## 3. cuda framework
 ## https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
-
-## compatibility
 ## https://stackoverflow.com/questions/60987997/why-torch-cuda-is-available-returns-false-even-after-installing-pytorch-with
