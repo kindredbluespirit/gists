@@ -19,3 +19,7 @@ make HOST_COMPILER=g++-13
 ## https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html
 ## https://stackoverflow.com/questions/60987997/why-torch-cuda-is-available-returns-false-even-after-installing-pytorch-with
 ## https://forums.developer.nvidia.com/t/older-versions-of-cuda/108163
+
+
+## for cuda 11.8 on ubuntu 20.04
+## https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
