@@ -29,3 +29,7 @@ make HOST_COMPILER=g++-13
 ## https://forums.developer.nvidia.com/t/nvidia-smi-shows-cuda-version-n-a/170644
 ## libcuda.so.<driver-version> is part of libcuda1 on debian, nvidia-utils on arch
 ## https://docs.nvidia.com/deploy/cuda-compatibility/index.html
+
+## cuda uninstall
+## https://forums.developer.nvidia.com/t/how-to-uninstall-cuda-toolkit-and-cudnn-under-linux/47923
+## https://stackoverflow.com/questions/56431461/how-to-remove-cuda-completely-from-ubuntu
