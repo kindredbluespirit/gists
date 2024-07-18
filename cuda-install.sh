@@ -20,6 +20,7 @@ make HOST_COMPILER=g++-13
 ## https://stackoverflow.com/questions/60987997/why-torch-cuda-is-available-returns-false-even-after-installing-pytorch-with
 ## https://forums.developer.nvidia.com/t/older-versions-of-cuda/108163
 ## https://discuss.pytorch.org/t/is-there-a-table-which-shows-the-supported-cuda-version-for-every-pytorch-version/105846
+## https://docs.nvidia.com/deploy/cuda-compatibility/index.html
 
 
 ## for cuda 11.8 on ubuntu 20.04
@@ -32,7 +33,6 @@ make HOST_COMPILER=g++-13
 ## libcuda1 issue 
 ## https://forums.developer.nvidia.com/t/nvidia-smi-shows-cuda-version-n-a/170644
 ## libcuda.so.<driver-version> is part of libcuda1 on debian, nvidia-utils on arch
-## https://docs.nvidia.com/deploy/cuda-compatibility/index.html
 
 ## cuda uninstall
 ## https://forums.developer.nvidia.com/t/how-to-uninstall-cuda-toolkit-and-cudnn-under-linux/47923
