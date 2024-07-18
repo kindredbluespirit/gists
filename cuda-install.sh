@@ -24,8 +24,11 @@ make HOST_COMPILER=g++-13
 ## for cuda 11.8 on ubuntu 20.04
 ## https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
 
-## libcuda1 issue 
+## all versions archives
+## https://developer.nvidia.com/cuda-toolkit-archive
 ## https://developer.download.nvidia.cn/compute/cuda/repos/debian12/x86_64/
+
+## libcuda1 issue 
 ## https://forums.developer.nvidia.com/t/nvidia-smi-shows-cuda-version-n-a/170644
 ## libcuda.so.<driver-version> is part of libcuda1 on debian, nvidia-utils on arch
 ## https://docs.nvidia.com/deploy/cuda-compatibility/index.html
