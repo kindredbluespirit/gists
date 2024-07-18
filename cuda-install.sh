@@ -37,3 +37,6 @@ make HOST_COMPILER=g++-13
 ## cuda uninstall
 ## https://forums.developer.nvidia.com/t/how-to-uninstall-cuda-toolkit-and-cudnn-under-linux/47923
 ## https://stackoverflow.com/questions/56431461/how-to-remove-cuda-completely-from-ubuntu
+
+## before installing cuda
+apt-mark hold libnvidia-gl-555 nvidia-compute-utils-555 nvidia-utils-555
