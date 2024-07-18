@@ -23,3 +23,6 @@ make HOST_COMPILER=g++-13
 
 ## for cuda 11.8 on ubuntu 20.04
 ## https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local
+
+## libcuda
+## https://developer.download.nvidia.cn/compute/cuda/repos/debian12/x86_64/
