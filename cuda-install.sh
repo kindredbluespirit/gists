@@ -28,3 +28,4 @@ make HOST_COMPILER=g++-13
 ## https://developer.download.nvidia.cn/compute/cuda/repos/debian12/x86_64/
 ## https://forums.developer.nvidia.com/t/nvidia-smi-shows-cuda-version-n-a/170644
 ## libcuda.so.<driver-version> is part of libcuda1 on debian, nvidia-utils on arch
+## https://docs.nvidia.com/deploy/cuda-compatibility/index.html
