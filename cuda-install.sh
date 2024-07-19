@@ -40,3 +40,7 @@ make HOST_COMPILER=g++-13
 
 ## before installing cuda
 apt-mark hold libnvidia-gl-555 nvidia-compute-utils-555 nvidia-utils-555
+
+## pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
+## The detected CUDA version (12.5) mismatches the version that was used to compile
+## PyTorch (11.8). Please make sure to use the same CUDA versions.
