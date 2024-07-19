@@ -81,6 +81,8 @@ RUN wget https://gitlab.com/libeigen/eigen/-/archive/3.4.0/eigen-3.4.0.tar.gz &&
 #     conda activate my && cd /kaolin &&\
 #     FORCE_CUDA=1 python setup.py develop && cd /
 
+## kaolin
+## https://kaolin.readthedocs.io/en/latest/notes/installation.html
 RUN bash -il -c "pip install kaolin==0.15.0 -f https://nvidia-kaolin.s3.us-east-2.amazonaws.com/torch-2.0.0_cu118.html"
 
 # ENV SHELL=/bin/bash
