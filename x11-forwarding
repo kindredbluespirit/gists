@@ -1,2 +1,4 @@
 ## https://stackoverflow.com/a/44434831
 ## in docker: x11 connection rejected because of wrong authentication
+
+## also check for the $DISPLAY env variable, it needs to have been given a value (like localhost:10)
