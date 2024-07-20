@@ -45,3 +45,6 @@ apt-mark hold libnvidia-gl-555 nvidia-compute-utils-555 nvidia-utils-555
 ## pip install "git+https://github.com/facebookresearch/pytorch3d.git@stable"
 ## The detected CUDA version (12.5) mismatches the version that was used to compile
 ## PyTorch (11.8). Please make sure to use the same CUDA versions.
+
+## nvidia-smi is only available in a docker container and not a dockerfile
+## https://github.com/NVIDIA/nvidia-docker/issues/225
