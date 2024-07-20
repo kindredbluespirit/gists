@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  foundationpose:
+    image: docker.io/kindredbluespirit/foundationpose:v4
+    container_name: foundationpose
+    working_dir: /app
+    network_mode: host
+    # command: bash -c "cd /FoundationPose && bash"
+    # command: sleep inf
+    command: tail -f /dev/null
+    # command: bash -l
+    # stdin_open: true     # Keep stdin open to support interactive mode
+    # tty: true            # Allocate a pseudo-TTY
+    environment:
+      - NVIDIA_DISABLE_REQUIRE=1
+      # - DISPLAY=${DISPLAY}
+      # - GIT_INDEX_FILE
+      # - DIR=${PWD}/../
+    # networks:
+    #   host:
+    #     aliases:
+    #       - foundationpose
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp=unconfined
+    volumes:
+      # - ${DIR}:${DIR}
+      - ..:/app
+      - /home:/home
+      - /mnt:/mnt
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /tmp:/tmp
+    # ipc: host
+    # runtime: nvidia
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - capabilities: [gpu]
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              # count: all
+              capabilities: [gpu]
