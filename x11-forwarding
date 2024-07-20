@@ -2,3 +2,4 @@
 ## in docker: x11 connection rejected because of wrong authentication
 
 ## also check for the $DISPLAY env variable, it needs to have been given a value (like localhost:10)
+## as long as its value is set to something that is present in the docker's /root/.Xauthority, it should work
