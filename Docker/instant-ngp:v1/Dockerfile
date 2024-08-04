@@ -60,6 +60,7 @@ RUN apt update && apt install -y wget &&\
     /opt/conda/bin/conda create -n my -y python=${PYTHON_VERSION} &&\
     echo "conda activate my" >> ~/.bashrc
 
+## https://stackoverflow.com/a/24540011
 COPY ../requirements.txt /
 
 RUN bash -il -c "echo \"Installing pip packages...\" \
