@@ -12,7 +12,7 @@ ssh -J <proxy-user>@<proxy-host> user@host
 Host <any>
 Hostname <destination-ip>
 User <username>
-ForwardX11 yes
-ForwardX11Trusted yes
+# ForwardX11 yes
+# ForwardX11Trusted yes
 ProxyJump <proxy-user>@<proxy-host>
 ```
