@@ -48,3 +48,11 @@ apt-mark hold libnvidia-gl-555 nvidia-compute-utils-555 nvidia-utils-555
 
 ## nvidia-smi is only available in a docker container and not a dockerfile
 ## https://github.com/NVIDIA/nvidia-docker/issues/225
+
+##########################
+
+## make sure the nvidia driver is loaded
+lsmod | rg nvidia
+
+## rebuild the initial ramdisk everytime you perform a pacman update
+mkinitcpio -P
