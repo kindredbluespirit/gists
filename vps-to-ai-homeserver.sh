@@ -55,5 +55,15 @@ PersistentKeepalive = 25
 ollama run llama3
 
 ## setup open-webui with podman
-docker run -d --gpus all --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+# docker run -d --gpus all --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
 # -p 3000:8080 
+
+####################
+
+## improved
+
+## gpu version
+docker run -d -e PORT=3000 --gpus all --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+
+## cpu version
+docker run -d -e PORT=3000 --network=host -e OLLAMA_BASE_URL=http://127.0.0.1:11434 -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui
