@@ -8,7 +8,7 @@
 rmmod pcspkr
 
 ## Connect to the internet
-iwd
+iwctl
 station wlan0 get-networks
 station wlan0 connect <network-name>
 
