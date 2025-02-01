@@ -106,3 +106,11 @@ setup-home
 
 ## https://wiki.archlinux.org/title/XDG_user_directories
 LC_ALL=C.UTF-8 xdg-user-dirs-update --force
+
+## Reboot into host as user #############
+
+## wifi
+systemctl enable --now NetworkManager
+nmcli device wifi list
+nmcli device wifi connect <network-name> --ask
+
