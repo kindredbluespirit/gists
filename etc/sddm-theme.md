@@ -16,7 +16,7 @@ If you get a blank screen, try settting the theme to `breeze` instead.
 ### Wallpaper/background
 https://wiki.archlinux.org/title/SDDM#Customizing_a_theme
 
-/usr/share/sddm/themes/name/theme.conf.user
+/usr/share/sddm/themes/breeze/theme.conf.user
 ```
 [General]
 background=/usr/share/wallpapers/default.jpeg
