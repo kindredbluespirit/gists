@@ -20,3 +20,11 @@ https://chatgpt.com/share/679d9ced-970c-800c-91a8-9404df7345dd
 So you can't remove some radeon package to solve it. Need to blacklist it.
 
 Refer to [radeon-freeze.md](radeon-freeze.md).
+
+-----------------
+
+https://wiki.archlinux.org/title/Kernel_module#Blacklisting
+
+`mkinitcpio -M | rg radeon` to show all the detected kernel modules
+
+`mkinitcpio -v | rg radeon` to for verbose output and dry run boot output
