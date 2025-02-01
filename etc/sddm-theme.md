@@ -23,6 +23,7 @@ background=/usr/share/wallpapers/default.jpeg
 
 ### Cursor theme not respected
 https://github.com/sddm/sddm/issues/1894#issuecomment-2041431779
+
 https://wiki.archlinux.org/title/SDDM#SDDM_loads_only_US_keyboard_layout (Xsetup)
 /usr/share/sddm/scripts/Xsetup
 ```
