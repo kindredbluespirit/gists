@@ -29,5 +29,5 @@ https://wiki.archlinux.org/title/SDDM#SDDM_loads_only_US_keyboard_layout (Xsetup
 
 /usr/share/sddm/scripts/Xsetup
 ```
-echo 'Xcursor.theme: oreo-white-cursors' | xrdb -nocpp -merge
+echo 'Xcursor.theme: oreo_white_cursors' | xrdb -nocpp -merge
 ```
