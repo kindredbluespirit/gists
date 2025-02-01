@@ -114,3 +114,5 @@ systemctl enable --now NetworkManager
 nmcli device wifi list
 nmcli device wifi connect <network-name> --ask
 
+## sddm-freeze.md
+## blacklist radeon
