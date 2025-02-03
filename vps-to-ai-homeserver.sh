@@ -23,8 +23,12 @@ systemctl enable --now wg-quick@wg0
 ## /etc/caddy/Caddyfile
 ## redirects https/443 traffic to open-webui listening on port 8080 
 ```
-https://<domain-name>
-reverse-proxy 10.10.10.10:8080 
+# https://<domain-name>
+# reverse-proxy 10.10.10.10:8080 
+
+https://<domain-name> {
+  reverse-proxy 10.10.10.10:8080
+}
 ```
 
 ## start caddy
