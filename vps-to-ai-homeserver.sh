@@ -27,7 +27,7 @@ systemctl enable --now wg-quick@wg0
 # reverse-proxy 10.10.10.10:8080 
 
 https://<domain-name> {
-  reverse-proxy 10.10.10.10:8080
+  reverse-proxy 10.10.10.10:3000
 }
 ```
 
