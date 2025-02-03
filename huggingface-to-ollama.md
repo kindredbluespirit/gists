@@ -11,7 +11,7 @@ https://medium.com/@qdrddr/the-easiest-way-to-convert-a-model-to-gguf-and-quanti
 Four steps
 1. Download safetensors from hf
 2. safetensors to gguf
-3. gguf to bin
+3. gguf to ollama
 4. (optional) quantize
 
 ------------------
@@ -35,7 +35,7 @@ cd deepseek-r1
 podman run --rm -v .:/model ghcr.io/ggerganov/llama.cpp:full --convert /model --outtype f16 ## or f32
 ```
 
-### gguf to bin
+### gguf to ollama
 ~/unshared/huggingface/deepseek-r1
 ```
 FROM ./Deepseek-R1-1.8B-F16.gguf
@@ -46,7 +46,7 @@ ollama create model1
 
 ----------------------
 
-### Directly convert safetensors to bin
+### Directly convert safetensors to ollama
 `llama.cpp` is not needed here.
 
 ~/unshared/huggingface/deepseek-r1
@@ -58,7 +58,7 @@ ollama create model2
 ```
 --------------------
 
-### Directly convert safetensors to bin
+### Directly convert safetensors to quantized ollama
 `llama.cpp` is not needed here.
 
 ~/unshared/huggingface/deepseek-r1
