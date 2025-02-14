@@ -117,3 +117,6 @@ nmcli device wifi connect <network-name> --ask
 ## sddm-freeze.md
 ## blacklist radeon
 systemctl enable --now sddm
+
+## bluetooth
+systemctl enable --now bluetooth
