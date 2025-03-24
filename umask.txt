@@ -1,0 +1,7 @@
+## https://wiki.archlinux.org/title/Umask#Set_the_mask_value
+The default value is set by distributions at `/etc/login.defs`
+
+Also the following at `/etc/systemd/system-login`
+```
+# session    optional   pam_umask.so         umask=022
+```
