@@ -1,0 +1,3 @@
+tlp
+https://wiki.archlinux.org/title/TLP
+https://linrunner.de/tlp/settings/battery.html
