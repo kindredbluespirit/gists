@@ -1,0 +1,3 @@
+uv for pip
+pixi for conda
+fnm for npm
