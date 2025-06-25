@@ -1,3 +1,5 @@
 uv for pip
 pixi for conda
 fnm for npm
+
+https://robert-mcdermott.medium.com/saying-goodbye-to-anaconda-91c18ddf89bb
